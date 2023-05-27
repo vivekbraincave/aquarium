@@ -36,7 +36,7 @@ class IndexController extends Controller
             $banner->fileType = $fileType;
         }
 
-        return view('index', compact('banners', 'brands', 'tankimages', 'settings'));
+        return view('home', compact('banners', 'brands', 'tankimages', 'settings'));
     }
 
     private function getFileExtension($filePath)
